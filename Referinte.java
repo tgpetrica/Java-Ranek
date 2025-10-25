@@ -11,5 +11,11 @@ public class Referinte {
 
         Casa vila = new Casa();
         System.out.println(vila);
+
+        Hotel h = new Hotel();
+        System.out.println(h);
+
+        Hotel y = h;
+        System.out.println(y);
     }
 }
