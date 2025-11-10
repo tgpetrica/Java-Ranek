@@ -10,11 +10,11 @@ Scrie un program care sa calculeze pretul total dupa aplicarea reducerii, in fun
 
 ---
 
-La o trecere de pietoni, culoarea semaforului determina daca pietonii pot traversa sau nu. Regulile sunt urmatoarele:
-- Verde: Pietonii pot traversa
-- Galben: Pietonii trebuie sa se pregateasca sa opreasca
-- Rosu: Pietonii nu pot traversa
-- orice alta culoare: Semafor defect
+Intr-o intersectie, culoarea semaforului determina daca masinile pot intra sau nu in intesectie. Regulile sunt urmatoarele:
+- Verde: Masinile pot traversa
+- Galben: Masinile trebuie sa se pregateasca sa opreasca
+- Rosu: Masinile nu pot traversa
+- orice alta culoare (combinatie): Semafor defect
 
 Scrie un program care sa afiseze un mesaj corespunzator in functie de culoarea semaforului salvata intr-un obiect String.
 
