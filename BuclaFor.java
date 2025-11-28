@@ -26,7 +26,7 @@ public class BuclaFor {
         int[] v = {50, 0, 21, 19, 15};
 
         for (int i = 0; i < v.length; i++) {
-            System.err.print(v[i] + " ");
+            System.out.print(v[i] + " ");
         }
 
         // for (;;) {
