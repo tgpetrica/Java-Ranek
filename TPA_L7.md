@@ -15,3 +15,6 @@ d) Sa se copieze continutul vectorului intr-un alt vector. [Citeste mai multe ai
 e) Sa se sorteze vectorul in ordine crescatoare. [Citeste mai multe aici](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-int:A-)
 
 Scrie codul Java care realizeaza aceste operatii si afiseaza rezultatele corespunzatoare in consola. Toate operatiile trebuie sa fie efectuate in metoda `main`. Vectorul initial trebuie sa ramana neschimbat dupa operatiile de copiere si sortare. Vectorul din exemplu este doar pentru referinta; codul trebuie sa functioneze pentru orice vector de numere intregi. Nu este nevoie sa citesti date de la tastatura.
+
+
+Rezolvare: [@3dbe77c](https://github.com/tgpetrica/Java-Ranek/blob/3dbe77cf11314fa46d8c27a3477479a1d712c7af/ExercitiiVectori.java)
