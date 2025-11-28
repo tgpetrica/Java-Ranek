@@ -18,6 +18,8 @@ Intr-o intersectie, culoarea semaforului determina daca masinile pot intra sau n
 
 Scrie un program care sa afiseze un mesaj corespunzator in functie de culoarea semaforului salvata intr-un obiect String.
 
+Rezolvare: [@3626b24](https://github.com/tgpetrica/Java-Ranek/blob/3626b24d05399722ceaf2eebe69b381a94a64b1e/Semaforul.java)
+
 ---
 
 La un examen, nota finala depinde de punctajul obtinut si prezenta.
@@ -32,3 +34,4 @@ Regulile pentru notare sunt urmatoarele:
 
 Scrie un program care sa determine si sa afiseze nota finala in functie de punctajul obtinut si prezenta studentului.
 
+Rezolvare: [@3626b24](https://github.com/tgpetrica/Java-Ranek/blob/3626b24d05399722ceaf2eebe69b381a94a64b1e/PunctajExamen.java)
