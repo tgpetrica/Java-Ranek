@@ -11,6 +11,8 @@ int[] g = {11, 7, 34, 2};
 
 Exemplu: pentru numerele: 2, 4, 2, 1, media geometrica este <img width="702" height="159" alt="image" src="https://github.com/user-attachments/assets/0092958d-0d15-40f4-b2c6-64e7dc53c044" />
 
+Puteti folosi apel al metodei [Math.sqrt(double)](https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html#sqrt-double-)
+
 2. Sa se declare o variabila intreaga `k` si o variabila intreaga `b`, apoi sa se initializeze cu valori introduse de programator. Sa se calculeze b<sup>k</sup>, prin inmultiri repetate.
 
 ## Urmatoarea problema se va rezolva in clasa **Digits**:
