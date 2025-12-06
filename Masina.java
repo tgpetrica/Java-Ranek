@@ -8,17 +8,29 @@ public class Masina {
 
     // Constructor
     public Masina(String marca, int vitezaMaxima, int numarUsi,float masaMaxima, String culoare) {
-        this.marca = marca;
-        this.vitezaMaxima = vitezaMaxima;
-        this.numarUsi = numarUsi;
-        this.masaMaxima = masaMaxima;
-        this.culoare = culoare;
+        this.marca          = marca;
+        this.vitezaMaxima   = vitezaMaxima;
+        this.numarUsi       = numarUsi;
+        this.masaMaxima     = masaMaxima;
+        this.culoare        = culoare;
         /*
-         * Pointerul this refera obiectul pe care il cream.
-         * Prin dereferentiere si prin pointerul this putem accesa atributele clasei
+         * Referinta this refera obiectul pe care il cream.
+         * Prin dereferentiere si prin referinta this putem accesa atributele clasei
          * 
          * Valoarea din dreapta egalului este valoarea transmisa prin parametrii constructorului
          */
+    }
+
+    public Masina() { // constructor fara parametri ~ default
+        this.marca = "marca fara nume";
+        this.vitezaMaxima = 0;
+        this.numarUsi = 0;
+        this.masaMaxima = 0;
+        this.culoare = "nu s-a ales culoare";
+    }
+
+    void Masina() { // acesta nu este un constructor, ci o metoda
+        System.out.println("mesaj");
     }
 
     // comportamente
@@ -51,6 +63,11 @@ public class Masina {
         m1.franeaza();
         m1.inchide();
         m1.schimbaCuloarea("rosu");
+
+        Masina m2 = new Masina(); // apel al constructorului implicit
+        System.out.println(m2.marca + " " + m2.vitezaMaxima + " " + m2.numarUsi + 
+            " " + m2.masaMaxima + " " + m2.culoare);
+        m2.Masina();
     }
 
 }
