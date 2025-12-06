@@ -20,3 +20,5 @@ Pasi de rezolvare:
 3. Se declara un array cu numarul de clienti distribuiti pe fiecare ora.
 4. Foloseste o bucla cu numar cunoscut de pasi pentru a atribui cate un client fiecarui magazin
 5. Afiseaza cati clieti au ajuns la fiecare magazin.
+
+Rezolvare: [@809f4b3](https://github.com/tgpetrica/Java-Ranek/blob/809f4b38031530409cb4016a57184526b8f8c2d6/RepartizareClienti.java)
