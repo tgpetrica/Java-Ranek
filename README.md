@@ -1,4 +1,4 @@
-[L10 - 6 dec](https://github.com/tgpetrica/Java-Ranek/commit/3fc417bf65e60f1640c18bf6217d3887beda2fab)
+[L10 - 6 dec](https://github.com/tgpetrica/Java-Ranek/commit/3fc417bf65e60f1640c18bf6217d3887beda2fab) + [TPA](https://github.com/tgpetrica/Java-Ranek/blob/main/TPA_L10.md)
 
 [L9 - 29 nov](https://github.com/tgpetrica/Java-Ranek/commit/809f4b38031530409cb4016a57184526b8f8c2d6) + [TPA](https://github.com/tgpetrica/Java-Ranek/blob/main/TPA_L9.md)
 
