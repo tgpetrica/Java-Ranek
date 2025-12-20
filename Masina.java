@@ -21,7 +21,7 @@ public class Masina {
          */
     }
 
-    public Masina() { // constructor fara parametri ~ default
+    Masina() { // constructor fara parametri ~ default
         this.marca = "marca fara nume";
         this.vitezaMaxima = 0;
         this.numarUsi = 0;
@@ -29,7 +29,7 @@ public class Masina {
         this.culoare = "nu s-a ales culoare";
     }
 
-    void Masina() { // acesta nu este un constructor, ci o metoda
+    public void Masina() { // acesta nu este un constructor, ci o metoda
         System.out.println("mesaj");
     }
 
