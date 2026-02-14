@@ -1,0 +1,7 @@
+1. Sa se scrie o clasa `Shape` care sa aiba o metoda `area()` care returneaza aria formei geometrice, apoi sa se scrie clasele `Circle`, `Square` si `Rectangle` care sa mosteneasca clasa `Shape` si sa implementeze metoda `area()` pentru fiecare forma geometrica in parte.
+
+2. Sa se scrie o clasa `Car` cu variabile de instante ascunse `manufacturer`, `model`, `year` si `mileage` si metode publice pentru a seta si a obtine valorile acestor variabile, dupa caz. Sa se suprascrie metoda `toString()` pentru a returna o reprezentare textuala a obiectului `Car`.
+
+3. Sa se scrie o ierarhie de clase pe baza regnului animal, cu o clasa de baza `Animal` care sa aiba o metoda `makeSound()` care returneaza sunetul pe care il face animalul, apoi sa se scrie clasele `Dog`, `Cat` si `Cow` care sa mosteneasca clasa `Animal` si sa implementeze metoda `makeSound()` pentru fiecare animal in parte.
+
+4. Se da [codul](https://github.com/tgpetrica/Java-Ranek/blob/main/HierarchyAssignment.java). Sa se identifice problemele din cod si sa se corecteze pentru a face codul sa functioneze corect. Tine evidenta modificarilor si scrie comentarii cu modificarile pe care le-ai adus. Dupa corectarea codului, sa se testeze pentru a se asigura ca functioneaza corect.
