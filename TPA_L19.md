@@ -10,13 +10,14 @@ Food
 -- Plant
     - Grass
     - Leaves
+```
 
 Sa se implementeze urmatoarele clase in care sa se instantieze obiecte din ierarhia de mai sus:
 
 - Carnivore (consuma doar carne)
 - Herbivore (consuma doar plante)
 - Omnivore (consuma atat carne cat si plante)
-```
+
 
 ## 2
 
