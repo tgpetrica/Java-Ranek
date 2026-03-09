@@ -114,25 +114,25 @@
 ---
 **Methods overloading**: allows a class to have more than one method with the same name, as long as their parameter lists are different (different number of parameters, different types of parameters, or different order of parameters).
     
-    ```java
-    class Calculator {
-        int add(int a, int b) {
-            return a + b;
-        }
-    
-        double add(double a, double b) {
-            return a + b;
-        }
-
-        double add (int a, double b) {
-            return a + b;
-        }
-
-        double add (double a, int b) {
-            return a + b;
-        }
+```java
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
     }
-    ```
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    double add (int a, double b) {
+        return a + b;
+    }
+
+    double add (double a, int b) {
+        return a + b;
+    }
+}
+```
 
     - same method name
     - different parameter lists
@@ -142,19 +142,22 @@
 
 **Methods overriding**: allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
 
-    ```java
-    class Animal {
-        void eat() {
-            System.out.println("Animal is eating");
-        }
+```java
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
     }
+}
+
+class Dog extends Animal {
     @Override
     class Dog extends Animal {
         void eat() {
             System.out.println("Dog is eating");
         }
     }
-    ```
+}
+```
 
     - same method name (signature)
     - same parameter list (signature)
@@ -172,30 +175,31 @@
 | default   | ✔          | ✔            | ✖        | ✖             |
 | private   | ✔          | ✖            | ✖        | ✖             |
 
-    ```java 
-    public class Test {
-        private int a;
-        protected int b;
-        int c; // default
-        public int d;
-    }
-    ```
+```java 
+public class Test {
+    private int a;
+    protected int b;
+    int c; // default
+    public int d;
+}
+```
+
 ---
 
 **Constructors**: A constructor is a special method that is called when an object is instantiated. It is used to initialize the object.
 
-    ```java
-    class Car {
-        String color;
-        int year;
-
-        // Constructor
-        Car(String color, int year) {
-            this.color = color;
-            this.year = year;
-        }
+```java
+class Car {
+    String color;
+    int year;
+    
+    // Constructor
+    Car(String color, int year) {
+        this.color = color;
+        this.year = year;
     }
-    ```
+}
+```
 
     - same name as the class
     - no return type
