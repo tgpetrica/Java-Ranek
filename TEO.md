@@ -232,15 +232,16 @@ class Car {
 
 *Primitive Types*
 
-| Type    | Size       | Example |
-| ------- | ---------- | ------- |
-| byte    | 8-bit      | 100     |
-| short   | 16-bit     | 2000    |
-| int     | 32-bit     | 50000   |
-| long    | 64-bit     | 100000L |
-| float   | 32-bit     | 3.14f   |
-| double  | 64-bit     | 3.14159 |
-| char    | 16-bit     | 'A'     |
-| boolean | true/false | true    |
+| Type    | Size       | Example | Default Value |
+| ------- | ---------- | ------- | ------------- |
+| byte    | 8-bit      | 100     | 0             |
+| short   | 16-bit     | 2000    | 0             |
+| int     | 32-bit     | 50000   | 0             |
+| long    | 64-bit     | 100000L | 0L            |
+| float   | 32-bit     | 3.14f   | 0.0f          |
+| double  | 64-bit     | 3.14159 | 0.0d          |
+| char    | 16-bit     | 'A'     | '\u0000'      |
+| boolean | true/false | true    | false         |
+
 
 
