@@ -164,6 +164,7 @@ class Dog extends Animal {
 - used with inheritance
 - runtime polymorphism
 
+> *Note*: The `@Override` annotation is used to indicate that right on the next line is a method intended to override a method in the superclass. It is not __required__, but it helps to catch errors at compile time if the method does not actually override a method in the superclass (e.g., due to a typo in the method name or incorrect parameters).
 ---
 
 *Access Modifiers:*
@@ -249,7 +250,7 @@ class Car {
 
 ---
 
-*Compilation and Execution:*
+*Compilation and Execution*
 1. Write the Java code in a file with a `.java` extension (e.g., `HelloWorld.java`).
 2. Compile the Java code using the `javac` command:
 ```bash
@@ -270,5 +271,120 @@ public class HelloWorld {
 ```
 
 ---
+
+*Data Structures*
+
+---
+
+Keywords:
+- `class`: Used to declare a class.
+- `public`: An access modifier that allows access from any other class.
+- `private`: An access modifier that restricts access to the class itself.
+- `protected`: An access modifier that allows access to subclasses and classes in the same package.
+- `static`: Indicates that a member belongs to the class rather than an instance of the class.
+- `final`: Used to declare constants or to prevent method overriding and inheritance.
+- `extends`: Used to indicate that a class is inheriting from a superclass.
+- `implements`: Used to indicate that a class is implementing an interface.
+- `new`: Used to create new objects.
+- `this`: Refers to the current instance of the class.
+- `super`: Refers to the superclass of the current class.
+- `return`: Used to exit from a method and optionally return a value.
+- `void`: Indicates that a method does not return any value.
+- `if`, `else`: Used for conditional statements.
+- `for`, `while`, `do-while`: Used for loops.
+- `switch`, `case`: Used for multi-way branching.
+- `try`, `catch`, `finally`: Used for exception handling.
+- `package`: Used to declare a package, which is a namespace for organizing classes and interfaces.
+- `import`: Used to import other classes and packages into the current class.
+- `null`: A literal that represents the absence of a value or a reference to an object.
+- `break`: Used to exit from a loop or a switch statement.
+- `continue`: Used to skip the current iteration of a loop and continue with the next iteration
+
+Not yet covered:
+- `throw`, `throws`: Used to indicate that a method can throw an exception. 
+- `abstract`: Used to declare a class that cannot be instantiated and may contain abstract methods.
+- `interface`: Used to declare an interface, which is a reference type that can contain abstract methods and constants.
+
+
+---
+
+String Class
+
+The `String` class in Java is used to create and manipulate character strings. It is a final class, meaning it cannot be subclassed, and all its methods are final, meaning they cannot be overridden.
+```java
+String str1 = "Hello";
+String str2 = new String("World");
+String str3 = str1 + " " + str2; // Concatenation
+```
+Strings are immutable, which means that once a `String` object is created, it cannot be changed. Any operation that seems to modify a string actually creates a new `String` object.
+```java
+String str1 = "Hello";
+str1 = str1 + " World"; // str1 now references a new String object "Hello World"
+```
+In this example, the original `String` object "Hello" remains unchanged, and `str1` now references a new `String` object "Hello World". Two `String` objects are created in this process: one for "Hello" and another for "Hello World".
+
+String is immutable, but you can use the `StringBuilder` or `StringBuffer` classes if you need to create mutable strings that can be modified without creating new objects.
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World"); // Modifies the same StringBuilder object
+String result = sb.toString(); // Converts StringBuilder to String
+```
+In this example, the `StringBuilder` object `sb` is modified in place when we call the `append` method, and we can convert it to a `String` when needed.
+
+- [String Class Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)
+- [StringBuilder Class Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html)
+- [StringBuffer Class Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuffer.html)
+
+---
+
+Memory
+
+- Stack: Used for static memory allocation and execution of threads. It stores local variables, method calls, and control flow.
+- Heap: Used for dynamic memory allocation. It stores objects and their associated data. The heap is shared among all threads in the application.
+- String Pool: A special area of the heap that stores string literals. When a string literal is created, it is interned and stored in the string pool. If another string literal with the same content is created, it will reference the same object in the string pool instead of creating a new one.
+```java
+String str1 = "Hello"; // str1 references a string literal in the string pool
+String str2 = "Hello"; // str2 references the same string literal in the string pool
+String str3 = new String("Hello"); // str3 references a new String object in the heap
+```
+In this example, `str1` and `str2` reference the same string literal "Hello" in the string pool, while `str3` references a new `String` object in the heap. There are two `String` objects created in this process: one in the string pool for the literal "Hello" and another in the heap for the `String` object created with `new String("Hello")`. Even though there are two `String` objects, there are three references to them: `str1` and `str2` reference the string literal in the string pool, while `str3` references the new `String` object in the heap.
+
+---
+
+Operators
+```
+- Arithmetic Operators: `+`, `-`, `*`, `/`, `%`
+- Relational Operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Logical Operators: `&&`, `||`, `!`
+- Bitwise Operators: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
+- Assignment Operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `|=`, `^=`, `<<=`, `>>=`, `>>>=`
+- Ternary Operator: `? :`
+- Instanceof Operator: `instanceof`
+- Increment and Decrement Operators: `++`, `--`
+```
+
+Increment and Decrement Operators:
+- `++` (increment operator): Increases the value of a variable by 1.
+```java
+int a = 5;
+a++; // a is now 6
+```
+```java
+int a = 5;
+++a; // a is now 6
+```
+> *Note*: The difference between `a++` and `++a` is that `a++` is a post-increment operator, which means it returns the value of `a` before incrementing it, while `++a` is a pre-increment operator, which means it increments the value of `a` first and then returns the incremented value.
+
+- `--` (decrement operator): Decreases the value of a variable by 1.
+```java
+int a = 5;
+a--; // a is now 4
+```
+```java
+int a = 5;
+--a; // a is now 4
+```
+
+> *Note*: Similar to the increment operator, `a--` is a post-decrement operator, which means it returns the value of `a` before decrementing it, while `--a` is a pre-decrement operator, which means it decrements the value of `a` first and then returns the decremented value.
 
 
