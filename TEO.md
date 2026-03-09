@@ -247,4 +247,28 @@ class Car {
 
 > *Note*: `boolean` is a logical type and its size is not defined by JVM specification, but it is commonly implemented as 1 byte (8 bits) in most JVM implementations.
 
+---
+
+*Compilation and Execution:*
+1. Write the Java code in a file with a `.java` extension (e.g., `HelloWorld.java`).
+2. Compile the Java code using the `javac` command:
+```bash
+javac HelloWorld.java
+```
+3. This will generate a bytecode file with a `.class` extension (e.g., `HelloWorld.class`).
+4. Run the compiled bytecode using the `java` command:
+```bash
+java HelloWorld
+```
+- The `java` command looks for the `main` method in the specified class and executes it.
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+---
+
 
