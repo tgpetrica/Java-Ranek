@@ -134,9 +134,9 @@ class Calculator {
 }
 ```
 
-    - same method name
-    - different parameter lists
-    - return type can be the same or different
+- same method name
+- different parameter lists
+- return type can be the same or different
 
 ---
 
