@@ -243,5 +243,8 @@ class Car {
 | char    | 16-bit     | 'A'     | '\u0000'      |
 | boolean | true/false | true    | false         |
 
+> *Note*: The default values are assigned to instance variables when they are declared but not initialized. Local variables do not have default values and must be initialized before use.
+
+> *Note*: `boolean` is a logical type and its size is not defined by JVM specification, but it is commonly implemented as 1 byte (8 bits) in most JVM implementations.
 
 
