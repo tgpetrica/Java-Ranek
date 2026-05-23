@@ -1,0 +1,19 @@
+O companie de ride sharing doreste sa gestioneze diferite tipuri de vehicule:
+- masini electrice
+- masini pe benzina
+- trotinete electrice
+
+Toate vehicule au:
+- ID
+- nume/model
+- pot afisa informatii despre ele
+- pot calcula costul unei curse
+
+Cerinte:
+se va defini clasa abstacta Vehicul: id, model
+
+Interfete: Electric, Combustibil
+
+Clase concrete: MasinaElectrica, MasinaBenzina, TrotinetaElectrica
+
+main:
