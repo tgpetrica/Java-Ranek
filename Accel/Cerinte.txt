@@ -17,3 +17,16 @@ Interfete: Electric, Combustibil
 Clase concrete: MasinaElectrica, MasinaBenzina, TrotinetaElectrica
 
 main:
+
+----
+
+Gestioneaza temperaturile inregistrate in mai multe orase pe parcursul unei saptamani.
+de exemplu:
+Bucuresti:  20, 12, 19, 28, 30
+Brasov:     16, 9, 13, 19, 20
+Cluj:       19, 18, 26, 29, 28
+
+- sa citim numele orasului si temperaturile din acea perioada
+- Stocarea datelor 
+- afisam orasele si temperatura medie
+- sortarea oraselor alfabetic
