@@ -92,6 +92,7 @@ public class Variabila {
         // String Pool unde sunt salvate literalurile String
         // read more: https://docs.oracle.com/en/java/javacard/3.2/jcapi/api_classic/javacardx/annotations/StringPool.html
 
+        
 
     }
 
