@@ -21,6 +21,6 @@ public class Person {
         return "Name:" + name +
              ", Phone: " + phoneNumber +
              ", Email:" + email +
-             ", Address" + address;
+             ", Address: " + address + "--";
     }
 }

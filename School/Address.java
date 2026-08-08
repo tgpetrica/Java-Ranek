@@ -1,13 +1,13 @@
 package School;
 
 public class Address implements Validation{
-    private String street;
-    private String city;
-    private String state;
-    private String postalCode;
-    private String country;
+    public String street;
+    public String city;
+    public String state;
+    public String postalCode;
+    public String country;
 
-    public Address(String street, String city, String state, String postalCode, String county) {
+    public Address(String street, String city, String state, String postalCode, String country) {
         this.street = street;
         this.city = city;
         this.state = state;
@@ -15,6 +15,7 @@ public class Address implements Validation{
         this.country = country;
     }
 
+    @Override
     public boolean validate() {
         return !street.isEmpty() && 
                 !city.isEmpty() && 
@@ -23,6 +24,7 @@ public class Address implements Validation{
                 !country.isEmpty();
     }
 
+    @Override
     public String outputAsLabel() {
         return street + ", " + 
                 city + ", " + 
@@ -31,6 +33,7 @@ public class Address implements Validation{
                 country;
     }
 
+    @Override
     public String toString() {
         return outputAsLabel();
     }
