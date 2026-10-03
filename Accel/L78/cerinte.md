@@ -1,18 +1,18 @@
-1. even odd counter
-2. find maximum number in a list
-3. reverse a string
-4. count vowels in a string
-5. binary permission checker
-6. remove duplicates from a list
-7. student average calculator (return mean and number of students with average above a given threshold)
-8. number base converter
-9. password strength evaluator
+1. even odd counter (citesc un int[] => returnez cate pare, cate impare)
+2. find maximum number in a list (citesc un int[] => returnez maximul)
+3. reverse a string (citesc un string => returnez stringul inversat)
+4. count vowels in a string (citesc un string => returnez numarul de vocale)
+5. binary permission checker (citesc un int => returnez daca are permisiuni)
+6. remove duplicates from a list (citesc o lista => returnez lista fara duplicate)
+7. student average calculator (citesc un array de note => returnez media si numarul de studenti cu medie mai mare decat un prag dat)
+8. number base converter (citesc un numar in baza 10 => returnez numarul in alta baza)
+9. password strength evaluator (citesc un string => returnez gradul de putere)
 10. ATM account : balance, deposit(), withdraw(), getBalance()
 11. Vehicle, Car, Motorcycle : inheritance and method overriding, polymorphism
 12. Shape: abstract class
 13. Payable interface: Employee, Invoice classes implementing the interface
-14. word frequency counter
-15. list removal based on condition
+14. word frequency counter (citesc un string => returnez frecventa fiecarui cuvant)
+15. list removal based on condition (citesc o lista si o conditie => returnez lista fara elementele care indeplinesc conditia)
 
 
 
